@@ -73,7 +73,36 @@ font-weight:600;
 nav a:hover{
 color:#8B0000;
 }
+nav ul{
+display:flex;
+align-items:center;
+gap:30px;
+list-style:none;
+}
 
+nav ul li a{
+display:flex;
+align-items:center;
+gap:8px;
+text-decoration:none;
+color:#222;
+font-weight:600;
+transition:.3s;
+}
+
+nav ul li a i{
+font-size:15px;
+color:#8B0000;
+transition:.3s;
+}
+
+nav ul li a:hover{
+color:#8B0000;
+}
+
+nav ul li a:hover i{
+transform:scale(1.15);
+}
 /* HERO */
 
 .hero{
@@ -197,11 +226,27 @@ justify-content:center;
 </div>
 
 <ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="people.html">People</a></li>
-<li><a href="catering.html">Catering</a></li>
-<li><a href="usage_rules.html">Usage Rules</a></li>
-<li><a href="Contact.html">Contact</a></li>
+<li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+
+<li><a href="index.html#about">
+<i class="fa-solid fa-circle-info"></i> About
+</a></li>
+
+<li><a href="people.html">
+<i class="fa-solid fa-users"></i> People
+</a></li>
+
+<li><a href="catering.html">
+<i class="fa-solid fa-utensils"></i> Catering
+</a></li>
+
+<li><a href="usage_rules.html">
+<i class="fa-solid fa-book"></i> Usage Rules
+</a></li>
+
+<li><a href="Contact.html">
+<i class="fa-solid fa-phone"></i> Contact
+</a></li>
 </ul>
 
 </nav>
