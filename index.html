@@ -434,26 +434,114 @@ text-align:center;
 }
 
 /* MOBILE */
+@media(max-width:768px){
 
-@media(max-width:900px){
+nav{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+transform:none;
+border-radius:0;
+padding:10px 15px;
+display:flex;
+flex-direction:column;
+gap:10px;
+}
+
+.logo{
+justify-content:center;
+gap:8px;
+}
+
+.logo img{
+height:40px;
+}
+
+.logo span{
+font-size:18px;
+text-align:center;
+}
+
+nav ul{
+display:flex !important;
+flex-wrap:wrap;
+justify-content:center;
+gap:10px;
+}
+
+nav ul li a{
+font-size:13px;
+gap:4px;
+}
+
+.hero{
+height:auto;
+min-height:70vh;
+padding:160px 20px 60px;
+}
+
+.hero h1{
+font-size:2.5rem;
+line-height:1.1;
+letter-spacing:-1px;
+}
+
+.hero p{
+font-size:1rem;
+line-height:1.6;
+max-width:100%;
+}
+
+.hero-btn{
+padding:14px 30px;
+font-size:16px;
+}
+
+section{
+padding:60px 20px;
+}
 
 .about{
 grid-template-columns:1fr;
+gap:30px;
 }
 
 .stats{
 grid-template-columns:1fr 1fr;
+padding:50px 20px;
 }
 
-.hero h1{
-font-size:4rem;
+.rooms,
+.facilities,
+.gallery{
+grid-template-columns:1fr;
 }
 
-nav ul{
-display:none;
+.gallery img{
+height:220px;
+}
+
+.section-title{
+font-size:2rem;
+}
+
+table{
+display:block;
+overflow-x:auto;
+white-space:nowrap;
+}
+
+.contact{
+padding:60px 20px;
+}
+
+.contact h2{
+font-size:2rem;
 }
 
 }
+
 
 @media(max-width:600px){
 
