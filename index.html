@@ -422,7 +422,88 @@ margin-bottom:20px;
 font-size:18px;
 margin:10px 0;
 }
+@media (max-width:768px){
 
+nav{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+transform:none;
+border-radius:0;
+padding:12px;
+flex-direction:column;
+gap:10px;
+}
+
+.logo{
+justify-content:center;
+}
+
+.logo img{
+height:45px;
+}
+
+.logo span{
+font-size:20px;
+}
+
+nav ul{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:10px;
+}
+
+nav ul li a{
+font-size:13px;
+}
+
+.hero{
+height:auto;
+min-height:85vh;
+padding:180px 20px 60px;
+background-position:center;
+}
+
+.hero h1{
+font-size:3rem;
+line-height:1.1;
+}
+
+.hero p{
+font-size:1rem;
+max-width:100%;
+}
+
+.about{
+grid-template-columns:1fr;
+}
+
+.stats{
+grid-template-columns:1fr 1fr;
+}
+
+.rooms,
+.facilities,
+.gallery{
+grid-template-columns:1fr;
+}
+
+section{
+padding:60px 20px;
+}
+
+.section-title{
+font-size:2rem;
+}
+
+table{
+display:block;
+overflow-x:auto;
+white-space:nowrap;
+}
+}
 /* FOOTER */
 
 footer{
@@ -434,7 +515,9 @@ text-align:center;
 }
 
 /* MOBILE */
-@media(max-width:768px){
+@media(max-width:600px){
+...
+}
 
 nav{
 position:fixed;
