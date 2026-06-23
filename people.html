@@ -344,29 +344,29 @@ nav{
 .logo img{
     height:40px;
 }
-
 .logo span{
-    font-size:18px;
-    white-space:nowrap;
+    font-size:16px;
+    white-space:normal;
+    text-align:center;
 }
 
 nav ul{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
     gap:8px;
     width:100%;
+    text-align:center;
 }
 
 nav ul li a{
-    font-size:12px;
-    padding:4px 6px;
+    font-size:13px;
+    padding:6px;
+    justify-content:center;
 }
 
 .hero{
-    margin-top:120px;
+    margin-top:170px;
 }
-
 
 .hero{
     margin-top:0;
